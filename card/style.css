@@ -1,0 +1,141 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 10px;
+    padding: 2rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.card {
+    box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 0.5rem;
+    max-width: 20rem;
+    display: flex;
+    flex-flow: column wrap;
+    overflow: hidden;
+    margin: 1rem;
+}
+
+.card-image-container {
+    /* width: 100%; */
+    position: relative;
+    /* margin-bottom: 1rem; */
+}
+
+img {
+    width: 100%;
+}
+
+.card-image-container>img {
+    width: 100%;
+    height: auto;
+}
+
+.card-image-container>.card-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+}
+
+.card-body {
+    cursor: pointer;
+}
+
+.card-body:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.card-heading {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.card-subheading {
+    font-size: 0.8rem;
+}
+
+.card-content {
+    padding: 0.5rem 1rem;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.card-button-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 0.5rem;
+}
+
+.card-icons-area {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.card-button {
+    cursor: pointer;
+    padding: 0.5rem 0.6rem;
+    background-color: white;
+    color: #6200ee;
+    font-weight: bold;
+    text-transform: capitalize;
+    border: none;
+}
+
+.card-button:hover {
+    background-color: rgba(98, 0, 238, 0.1);
+    /* opacity: 0.1; */
+    /* color: blueviolet; */
+}
+
+.card-icon {
+    border-radius: 50%;
+    font-size: 1.2rem;
+    padding: 0.6rem 0.8rem;
+}
+
+.card-icon:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.card-horizontal>.card-body {
+    display: flex;
+    flex-direction: row;
+}
+
+.card-horizontal img {
+    height: 100%;
+}
+
+.card-horizontal .card-image-container {
+    width: 40%;
+}

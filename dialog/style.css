@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Source+Sans+Pro:wght@300&family=Zen+Kurenaido&display=swap');
+
+/* reset css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* end of reset css */
+
+.demo-container {
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    background-color: aliceblue;
+}

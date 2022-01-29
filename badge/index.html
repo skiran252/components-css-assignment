@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Badge Component</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="text-container">
+        <div class="badge-container">
+          <p class="badge-text">Text with Small badge <span class="sm-badge">4</span></p>
+        </div>
+      </div>
+      <div class="text-container">
+        <div class="badge-container">
+          <p class="badge-text">Text with large badge <span class="lg-badge">4</span></p>
+        </div>
+      </div>
+
+      <div class="text-container">
+        <p class="badge-text">Button with badge on the left</p>
+        <div class="badge-container">
+          <span class="sm-left-badge">5</span>
+          <button class="btn btn-primary">button</button>
+        </div>
+      </div>
+
+      <div class="text-container">
+        <p class="badge-text">Button with toggle badge</p>
+        <div class="badge-container">
+          <span class="sm-left-badge">5</span>
+          <button class="btn btn-primary" onclick="toggleBadge(event)">button</button>
+        </div>
+      </div>
+
+      <div class="text-container">
+        <p class="badge-text">badge on the icon</p>
+        <div class="badge-container"><i class="fa fa-solid fa-home"></i> <span class="sm-right-badge">5</span></div>
+      </div>
+    </div>
+
+    <script>
+      function toggleBadge(e) {
+        //find sibling whose class is sm-badge
+        var badge = e.target.parentNode.querySelector(".sm-left-badge");
+        //toggle class if has class hidden remove else add
+        if (badge.classList.contains("hidden")) {
+          badge.classList.remove("hidden");
+        } else {
+          badge.classList.add("hidden");
+        }
+      }
+    </script>
+  </body>
+</html>

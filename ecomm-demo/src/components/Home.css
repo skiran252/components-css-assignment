@@ -1,0 +1,55 @@
+:root {
+    --BOX-SHADOW-HEADER: 0 3px 10px 2px rgb(158, 150, 150);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 100vw;
+    word-spacing: 2px;
+}
+
+.home-container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+        "aside main main main";
+    gap: 1px;
+}
+
+.product-header {
+    grid-area: header;
+}
+
+.filter-menu {
+    grid-area: aside;
+}
+
+.products-list {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    gap: 1rem;
+}
+
+iframe {
+    word-wrap: wrap;
+}
+
+.floating-action-btn {
+    color: var(--COLOR-PRIMARY);
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.card-wishlist {
+    color: black;
+}
